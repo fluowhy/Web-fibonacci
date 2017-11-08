@@ -1,10 +1,14 @@
 # -*- coding: utf-8 -*-
 
+from __future__ import division
+import numpy as np
 from flask import Flask
 from flask import request
 
 # Este programa crea una web en localhost:5000 que permite ingresar un numero el cual corresponde a un termino de una sucesion de fibonacci y devuelve el termino n y n-1 de la sucesion.
 
+# funcion antigua, lenta
+"""
 def fibo(x):
 	if x==0:
 		return 0
@@ -12,13 +16,17 @@ def fibo(x):
 		return 1
 	else:
 		return fibo(x-1) + fibo(x-2)
-
+"""
+# funcion nueva, rapida
+def fibo(x):
+	gold = (1 + np.sqrt(5))*0.5
+	n_fibo = int(gold**x/np.sqrt(5)+0.5)
+	return n_fibo
 app = Flask(__name__)
 
 @app.route('/')
 def index():
- 	return 
-"""<!DOCTYPE html>
+ 	return """<!DOCTYPE html>
 <html>
 <body>
 <h1>Sucesion de Fibonacci</h1>
