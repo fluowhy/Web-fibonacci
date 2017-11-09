@@ -10,3 +10,4 @@ for i in pay:
 	payload = {'num':i, 'my-form':'Send'}
 	requests.post('http://localhost:5000', data=payload)
 
+print 'tests:', pay
