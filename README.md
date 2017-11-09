@@ -12,6 +12,6 @@ La forma recomendada de ejecución es abriendo un terminal y ejecturar Python en
 Si se realizaron los pasos anteriores, la forma de ingresar a la web es a través de localhost:5000. La dirección anterior debe ser escrita en la barra de direcciones de un browser a elección (único browser probado: Vivaldi). En ella se debe ingresar un numero entero y apretar el botón Send (o en su defecto la tecla Enter) para enviar la solicitud. Si se desea evaluar otra, se debe volver atrás y repetir el procedimiento.
 # Cómo ejecutar test.py
 Abrir un segundo terminal con Python y escribir test.py. En el primer terminal se despliega la respuesta a la entrada de los tests, es decir, se informa si ésta fue errónea o no y la entrada correspondiente. Es importante mantener en ejecución el script fibonacci.py para el uso del test.
-# Créditos
+# Referencias
 Parte del código fue inspirado en https://stackoverflow.com/questions/12277933/send-data-from-a-textbox-into-flask, para luego realizar las modificaciones correspondientes dado el problema a solucionar. 
 La forma cerrada para los términos de la sucesión de fibonacci fue obtenida de https://en.wikipedia.org/wiki/Fibonacci_number, sección Closed-form expression.
